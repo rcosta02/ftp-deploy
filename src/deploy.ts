@@ -48,7 +48,7 @@ async function connect(client: ftp.Client, args: IFtpDeployArgumentsWithDefaults
             user: args.username,
             password: args.password,
             port: args.port,
-            secure: secure,
+            secure: true,
             secureOptions: {
                 rejectUnauthorized: false
             }
