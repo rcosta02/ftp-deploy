@@ -50,7 +50,7 @@ async function connect(client: ftp.Client, args: IFtpDeployArgumentsWithDefaults
             port: args.port,
             secure: secure,
             secureOptions: {
-                rejectUnauthorized: rejectUnauthorized
+                rejectUnauthorized: false
             }
         });
     }
